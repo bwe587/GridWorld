@@ -27,6 +27,8 @@ You may also adjust parameters: Gamma, Steps, and Explr. A breif overview is pro
 
 ![run_simulation](https://github.com/bwe587/GridWorld/assets/105562270/9f7f11ec-1932-46bf-8c5b-249e2c0bf8da)
 
+At last, press the green play button and watch your agent learn within the grid environment you have created. If you wish to stop the simulation before reaching the maximum number of steps, press the red stop button.
+
 ## Authors 
 
 - [@bwe587](https://www.github.com/bwe587)
