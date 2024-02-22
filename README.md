@@ -17,13 +17,13 @@ Once that is done, assign penalty and reward tiles. Simply click on the tiles to
 
 Control the row and column placement of your agent inside the grid environment by interacting with the purple buttons. Once you are satisfied, press the orange button located under the "Place Agent" panel. Your agent has now emerged into the realm of bits.
 
-You may also adjust parameters: Gammaa, Steps, and Explr. A breif overview is provided below:
+You may also adjust parameters: Gamma, Steps, and Explr. A breif overview is provided below:
 
-Gamma: How much the past affects the future decision(s).
+*  Gamma: How much the past affects the future decision(s).
 
-Steps: Number of discrete actions that an agent undergoes following the termination of the run. 
+*  Steps: Number of discrete actions that an agent undergoes following the termination of the run. 
 
-Explr: A curiosity parameter that mimics our desire for either exploring better rewards, or avoiding worst ones.
+*  Explr: A curiosity parameter that mimics our desire for either exploring better rewards, or avoiding worst ones.
 
 ![run_simulation](https://github.com/bwe587/GridWorld/assets/105562270/9f7f11ec-1932-46bf-8c5b-249e2c0bf8da)
 
