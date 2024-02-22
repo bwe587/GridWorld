@@ -8,6 +8,8 @@
 
 ![gives_the_user_power_to_change_parameters_without_going_to_the_source_code](https://github.com/bwe587/GridWorld/assets/105562270/316c2119-49c5-4322-84ca-10339e4f4a9f)
 
+![run_simulation](https://github.com/bwe587/GridWorld/assets/105562270/9f7f11ec-1932-46bf-8c5b-249e2c0bf8da)
+
 ## Authors 
 
 - [@bwe587](https://www.github.com/bwe587)
