@@ -11,8 +11,6 @@ pyglet.options['win32_gdi_font'] = True
 
 pyglet.font.add_file('digital.ttf')
 
-#window.wm_attributes('-fullscreen', 'True')
-
 class GridWorld:
 
 	def __init__(self, APP):
@@ -1267,6 +1265,14 @@ class GridWorld:
 			print("- The Talos Principle")
 			num_of_iter = 0
 
+		def saveLastClickPos(event):
+			self.last_click_x = event.x
+			self.last_click_y = event.y
+
+		def dragWindow(event):
+			x, y = event.x - self.last_click_x + window.winfo_x(), event.y - self.last_click_y + window.winfo_y()
+			window.geometry("+%s+%s" % (x , y))
+
 		def button_release_handler(event):
 			self.button_start.config(image=self.img_btn_start)
 
@@ -1312,10 +1318,16 @@ class Options(tk.Toplevel):
 		def relative_to_assets(self,path: str) -> Path:
 			return self.ASSETS_PATH / Path(path)
 
-
 APP = tk.Tk()
-APP.geometry("1280x1024")
+window_width = 1280
+window_height = 1024
+screen_width = APP.winfo_screenwidth()
+screen_height = APP.winfo_screenheight()
+position_top = int(screen_height/2 - window_height/2)
+position_right = int(screen_width/2 - window_width/2)
+APP.geometry(f'{window_width}x{window_height}+{position_right}+{position_top}')
 APP.title("Grid World")
 APP.resizable(0,0)
+APP.overrideredirect(True)
 GW = GridWorld(APP) 
 APP.mainloop()
